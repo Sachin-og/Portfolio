@@ -1,0 +1,34 @@
+.blog-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+html {
+
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+.blog-card h3 {
+  margin-top: 0;
+}
+
+.blog-card p {
+  margin-bottom: 20px;
+}
+
+.blog-card button {
+  background-color: #283490;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.blog-card button:hover {
+  background-color: #ff2b3c;
+}

@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #f0f8ff; /* Light blue background */
+    --secondary-color: #ffffff; /* White background */
+    --text-color: #333333; /* Dark text color */
+    --accent-color: #007bff; /* Accent color */
+  }
+  html {
+
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+  body {
+    overflow-y: auto;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 4.5rem;
+    scroll-behavior: smooth;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    color: var(--accent-color);
+    margin: 0;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .about-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+  }
+  
