@@ -91,7 +91,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link to={"/"+page} underline="none">
+                    <Link to={"/Portfolio/"+page} underline="none">
                      {page}
                     </Link>
                   </Typography>
@@ -126,7 +126,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block',underline:'none' }}
               >
-                <Link to={"/"+page} style={{color:"white",display:"block"}} underline="none">
+                <Link to={"/Portfolio/"+page} style={{color:"white",display:"block"}} underline="none">
                      {page}
                     </Link>
               </Button>
