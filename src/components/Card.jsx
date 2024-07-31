@@ -1,27 +1,38 @@
-import React from "react";
-import { Link } from "react-router-dom";
-function Newsitem(props) {
-  let { title, text, imgUrl, sourceUrl } = props;
+import React from 'react';
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { styled } from '@mui/system';
+const StyledCard = styled(Card)({
+  maxWidth: 345,
+  margin: '20px',
+  transition: 'transform 0.2s',
+  '&:hover': {
+    transform: 'scale(1.05)',
+  },
+});
+
+const StyledMedia = styled(CardMedia)({
+  height: 140,
+});
+
+const ProjectCard = ({ imgUrl:image, title, text:description, sourceUrl:link }) => {
   return (
-    <div>
-      <div className="card my-3 mx-3">
-        <img src={imgUrl} className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text">{text.substring(0, 100)}</p>
-
-          <Link
-            to={sourceUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-sm btn-dark"
-          >
-            See Project
-          </Link>
-        </div>
-      </div>
-    </div>
+    <StyledCard>
+      <CardActionArea href={link} target="_blank">
+        <StyledMedia
+          image={image}
+          title={title}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {title}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {description.substring(0,100)}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </StyledCard>
   );
-}
+};
 
-export default Newsitem;
+export default ProjectCard;

@@ -13,7 +13,8 @@ const HomePage = () => {
         <div className="intro-text">
           <h1>Hello,</h1>
           <h1> I'm <b style={{color:"#071952"}}>Sachin</b></h1>
-          <h2><strong>WEB DEVELOPER</strong></h2>
+          <h2>Building the Future,</h2>
+          <h2> One Line of Code at a Time</h2>
 
         </div>
         <div className="photo-placeholder">

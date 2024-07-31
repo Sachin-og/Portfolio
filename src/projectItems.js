@@ -2,7 +2,7 @@ const items=  [
     {
         id: 1,
         title : "NewsApp",
-        text : "This is single page react app which provides you with news across diffrent genres without loading page to swicth from one page to another. This app make use news api to fetch data from newsapi.com and show in a card form structure .",
+        text : "This is single page react app which provides you with news across diffrent genres without loading page to swicth from one page to another.This app make use news api to fetch data from newsapi.com and show in a card form structure .",
         sourceUrl: "https://github.com/Sachin-og/News-App",
         imgUrl:"https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/22bbc9101782941.5f28451fa57f4.png"
     },
@@ -16,7 +16,7 @@ const items=  [
     {
         id: 3,
         title : "TextUtils",
-        text : "'This App is made for the basic and mostly used utilities of text editing This App offers following action on your text Conversion To Upper Case : convert complete text to upperCase        ,Conversion To Lower Case : convert complete text to lowerCase,Clears The Text if added mistakenly,To Clip-Board",
+        text : "'This App is made for the basic and mostly used utilities of text editing This App offers followingactionon your text Conversion To Upper Case : convert complete text to upperCase        ,Conversion To Lower Case : convert complete text to lowerCase,Clears The Text if added mistakenly,To Clip-Board",
         sourceUrl: "https://github.com/Sachin-og/Text-Utilities",
         imgUrl:"https://www.text-utils.com/assets/img/og_img.jpg"
     },

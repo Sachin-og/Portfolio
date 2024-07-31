@@ -11,7 +11,7 @@ import './BlogCard.css';
 
 const BlogCard = ({ title, content, onDelete }) => {
   return (
-    
+    <div className="blog-card">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -34,7 +34,7 @@ const BlogCard = ({ title, content, onDelete }) => {
           </Button>
         </AccordionDetails>
       </Accordion>
-    
+    </div>
   );
 };
 

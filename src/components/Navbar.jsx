@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import PersonIcon from "@mui/icons-material/Person";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import img from "../../src/images/profilepic.png";
 import { Link } from "react-router-dom";
 const pages = ["Home", "About", "Projects", "Blogs", "Skills"];
@@ -35,9 +36,19 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+      primary: {
+        main: '#1976d2',
+      },
+    },
+  });
 
   return (
     <div style ={{marginRight:"1rem"}} className="fixed-top">
+      <ThemeProvider theme={darkTheme}>
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -176,6 +187,7 @@ function ResponsiveAppBar() {
           </Toolbar>
         </Container>
       </AppBar>
+      </ThemeProvider>
     </div>
   );
 }

@@ -14,6 +14,7 @@ function Skills() {
       title = {item.title}
       imgUrl = {item.imgIcon}
       sourceUrl ={item.sourceUrl}
+      progress={item.progress}
       />)}
       
     </div>
@@ -24,6 +25,7 @@ function Skills() {
       title = {item.title}
       imgUrl = {item.imgIcon}
       sourceUrl ={item.sourceUrl}
+      progress = {item.progress}
       />)}
       
     </div>
@@ -34,6 +36,7 @@ function Skills() {
       title = {item.title}
       imgUrl = {item.imgIcon}
       sourceUrl ={item.sourceUrl}
+      progress={item.progress}
       />)}
       
     </div>
